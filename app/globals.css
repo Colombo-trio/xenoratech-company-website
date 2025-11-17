@@ -1,26 +1,110 @@
 @import "tailwindcss";
+/* @import "tailwindcss/utilities" (dark:); */
+@custom-variant dark (&:where(.dark, .dark *));
 
+
+/* -----------------------------
+   THEME VARIABLES
+----------------------------- */
+
+/* Light mode (default) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Dark mode (Next.js toggles class="dark") */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Apply variables */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tailwind theme tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* -----------------------------
+   GRADIENT TEXT
+----------------------------- */
+.gradient-text {
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* -----------------------------
+   FADE IN UP
+----------------------------- */
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Alternative smooth variant (optional) */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------------
+   FLOATING BLOBS
+----------------------------- */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float-reverse {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(20px) rotate(-10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float-reverse {
+  animation: float-reverse 8s ease-in-out infinite;
+}
+
+/* -----------------------------
+   PARTICLE ANIMATION
+----------------------------- */
+
+/* Smooth particle animation */
+@keyframes move-particle {
+  from {
+    transform: translate(var(--x-start), var(--y-start)) scale(var(--scale-start));
+    opacity: 0;
+  }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  to {
+    transform: translate(var(--x-end), var(--y-end)) scale(var(--scale-end));
+    opacity: 0;
+  }
+}
+
+.particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: move-particle linear infinite;
 }

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme/ThemeContext";
 
 export const metadata: Metadata = {
-  title: "Your Website Title",
+  title: "VOXICORE - Innovative Tech Solutions",
   description: "Your website description",
 };
 

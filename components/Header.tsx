@@ -28,7 +28,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 dark:bg-slate-900/50 backdrop-blur-lg shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl font-bold gradient-text">
-          ColomboTrio
+          VOXICORE
         </Link>
 
         {/* Desktop Nav */}

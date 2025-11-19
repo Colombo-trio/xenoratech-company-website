@@ -36,7 +36,7 @@ const AboutUsSection: React.FC = () => {
             Illuminating the <span className="gradient-text">Future of Technology</span>
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            At XenoraTech, we build digital experiences that shine—powered by clarity, precision engineering, and purposeful innovation.
+            At Voxicore, we build digital experiences that resonate—powered by clarity, precision engineering, and purposeful innovation.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const AboutUsSection: React.FC = () => {
             <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 to-cyan-500 rounded-lg blur-xl opacity-20"></div>
             <img
               src="https://picsum.photos/seed/xenoratechteam/800/600"
-              alt="XenoraTech Team"
+              alt="Voxicore Team"
               className="relative rounded-lg shadow-2xl w-full h-auto"
             />
           </div>
@@ -55,18 +55,18 @@ const AboutUsSection: React.FC = () => {
           {/* Information Cards */}
           <div className="space-y-8">
             <InfoCard icon={<MissionIcon />} title="Our Mission">
-              To create high-quality, future-ready digital solutions that empower businesses through clarity, innovation, 
+              To create high-quality, future-ready digital solutions that empower businesses through clarity, innovation,
               and precise engineering—technology that illuminates possibilities instead of complicating them.
             </InfoCard>
 
             <InfoCard icon={<VisionIcon />} title="Our Vision">
-              To become a global leader in next-generation software, shaping a world where technology carries identity, 
+              To become a global leader in next-generation software, shaping a world where technology carries identity,
               purpose, and brilliance—bright enough to move industries forward.
             </InfoCard>
 
             <InfoCard icon={<TeamIcon />} title="Our Story">
-              The name XenoraTech comes from “Xenon”—one of the brightest elements—combined with “Aura,” symbolizing the 
-              digital presence surrounding every great experience. We blend clarity and identity into every product we create.
+              The name Voxicore combines "Vox" (voice) and "Core" (essence). We believe in giving a powerful voice to the
+              core ideas that drive your business forward. We blend clarity and identity into every product we create.
             </InfoCard>
           </div>
 

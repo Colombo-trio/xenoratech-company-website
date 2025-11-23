@@ -48,21 +48,32 @@ export const MongoDBIcon: React.FC = () => <svg viewBox="0 0 128 128" className=
 export const AWSIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#FF9900" d="M64.5 110.6c-25.7 0-46.6-20.8-46.6-46.6S38.8 17.4 64.5 17.4s46.6 20.8 46.6 46.6-20.9 46.6-46.6 46.6z"></path><path fill="#232F3E" d="M73.5 90.3c-1.3 0-2.5-.2-3.7-.5-5.3-1.6-8.9-6.7-8.9-12.4v-4.9c0-6.1 4.5-11.1 10.4-11.1h5.9c3 0 5.6 1.1 7.7 3.3l-3.3 3.3c-1.1-.9-2.3-1.4-3.7-1.4h-5.2c-3.1 0-5.4 2.6-5.4 5.7v1.2h15.9v.8c0 1.9-.3 3.8-1 5.5-1.9 4.9-6.3 8-11.7 8zm2.4-7.5c2.4 0 4.2-1.8 4.2-4.2v-1.1H70.3v1.1c0 2.4 1.8 4.2 5.6 4.2zM43.7 90.3c-1.3 0-2.5-.2-3.7-.5-5.3-1.6-8.9-6.7-8.9-12.4v-4.9c0-6.1 4.5-11.1 10.4-11.1h5.9c3 0 5.6 1.1 7.7 3.3l-3.3 3.3c-1.1-.9-2.3-1.4-3.7-1.4h-5.2c-3.1 0-5.4 2.6-5.4 5.7v1.2h15.9v.8c0 1.9-.3 3.8-1 5.5-1.9 4.9-6.3 8-11.7 8zm2.5-7.5c2.4 0 4.2-1.8 4.2-4.2v-1.1H40.6v1.1c0 2.4 1.8 4.2 5.6 4.2zM98.8 77.4c0 6.7-4.5 11.9-11.2 11.9-4.1 0-7.8-2.1-9.9-5.4l.6-9.7c.9-1.9 3.2-3.4 5.7-3.4 3.1 0 5.4 2.5 5.4 5.6v.1c0 .5 0 1-.1 1.5l5.5.9c.1-1.3.2-2.7.2-4 0-6-3.8-10.7-10.2-10.7-6.5 0-11.2 5.1-11.2 11.6 0 6.6 4.6 12 11.5 12 4.1 0 7.7-1.9 10-5l-4.2-3.8c-1 .6-2.1.9-3.3.9-2.4 0-4.1-1.8-4.2-4.1l11.5-.1z"></path><path fill="#232F3E" d="M57.6 40c-.7 1.4-1.3 2.9-2 4.4l-7.2 16.3 8.3-2.9-3-6.6c2.4-1.2 4.6-2.6 6.5-4.3l-2.6-6.9zM72 40c.7 1.4 1.3 2.9 2 4.4l7.2 16.3-8.3-2.9 3-6.6c-2.4-1.2-4.6-2.6-6.5-4.3l2.6-6.9z"></path></svg>;
 export const TensorFlowIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#FF9800" d="M64 21L21.8 42.4v43.2L64 107l42.2-21.4V42.4L64 21zm-15.5 60.1V46.9h31v6.9h-22.9v8.3h20.4v6.9h-20.4v9.2h23.6v6.9h-31.7z"></path></svg>;
 
+export const AngularIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#DD0031" d="M64 3L13.6 21.2 21.4 98 64 121.8 106.6 98 114.4 21.2 64 3z"></path><path fill="#C3002F" d="M64 121.8V14.6L114.4 21.2 106.6 98z"></path><path fill="#FFF" d="M64 23.6L32.8 93.2H47l7.2-18h20.4l7.2 18h13.4L64 23.6zm-10.6 42.4L64 37.4l10.6 28.6H53.4z"></path></svg>;
+export const NextJSIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#000" d="M64 4C30.9 4 4 30.9 4 64s26.9 60 60 60 60-26.9 60-60S97.1 4 64 4zm28 91.5l-37.4-48v43.2h-8V36.5h8l37.4 48V41.3h8v54.2h-8z"></path></svg>;
+export const NodeJSIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#339933" d="M64 4.2L9.8 35.4v62.4L64 129l54.2-31.2V35.4L64 4.2zm29.6 88.4l-26.6 15.4v-31l26.6-15.4v31zm-32.6-18.8L34.4 58.4 61 43l26.6 15.4-26.6 15.4zm-3-34.8L31.4 54.4V23.4l26.6 15.4v15.4z"></path></svg>;
+export const MySQLIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#00758F" d="M64 10c-25 0-46 18-46 42 0 15 8 28 21 36v16c0 3 4 5 7 3l12-9c2 0 4 0 6 0 25 0 46-18 46-42s-21-46-46-46z"></path><path fill="#F29111" d="M98 52c0 12-20 12-20 12s5 4 5 8c0 7-10 10-10 10s-4-12-14-12c-8 0-12 5-12 5s-2-10 8-14c8-3 18-2 18-2s-8-6-8-12c0-8 12-10 12-10s6 8 6 15z"></path></svg>;
+export const PostgreSQLIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#336791" d="M64 10c-28 0-50 22-50 50s22 50 50 50 50-22 50-50-22-50-50-50zm0 88c-15 0-28-8-34-20 4-2 9-3 14-3 8 0 14 4 18 10 3-6 10-10 18-10 5 0 10 1 14 3-6 12-19 20-30 20z"></path></svg>;
+export const VercelIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#000" d="M64 16L112 96H16L64 16z"></path></svg>;
+export const JavaIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#5382A1" d="M64 10c-15 0-28 8-34 20 4-2 9-3 14-3 8 0 14 4 18 10 3-6 10-10 18-10 5 0 10 1 14 3-6 12-19 20-30 20z"></path><path fill="#F89820" d="M64 118c-18 0-34-6-34-14 0-8 16-14 34-14s34 6 34 14c0 8-16 14-34 14z"></path></svg>;
+export const PythonIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#3776AB" d="M64 10c-12 0-22 4-22 12v6h22v4H28v24h6v-20h40v20h6V32c0-8-10-12-22-12z"></path><path fill="#FFD43B" d="M64 118c12 0 22-4 22-12v-6H64v-4h36V72h-6v20H54V72h-6v24c0 8 10 12 22 12z"></path></svg>;
+export const SpringBootIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#6DB33F" d="M64 10C34 10 10 34 10 64s24 54 54 54 54-24 54-54S94 10 64 10zm0 90c-20 0-36-16-36-36s16-36 36-36 36 16 36 36-16 36-36 36z"></path><path fill="#FFF" d="M64 38c-14 0-26 12-26 26s12 26 26 26 26-12 26-26-12-26-26-26zm0 42c-9 0-16-7-16-16s7-16 16-16 16 7 16 16-7 16-16 16z"></path></svg>;
+export const AndroidIcon: React.FC = () => <svg viewBox="0 0 128 128" className="h-full w-auto"><path fill="#3DDC84" d="M32 48h12v40H32V48zm52 0h12v40H84V48zM64 24c-18 0-34 12-38 28h76c-4-16-20-28-38-28z"></path></svg>;
+
 // Theme Icons
 const ThemeIcon: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2">
-      {children}
-    </svg>
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" strokeWidth="2">
+    {children}
+  </svg>
 );
 export const SunIcon: React.FC = () => <ThemeIcon><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></ThemeIcon>;
 export const MoonIcon: React.FC = () => <ThemeIcon><path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></ThemeIcon>;
 
 // Social Icons
 const SocialIcon: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      {children}
-    </svg>
-  );
+  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    {children}
+  </svg>
+);
 
 export const TwitterIcon: React.FC = () => <SocialIcon><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085 4.92 4.92 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.214c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></SocialIcon>;
 export const LinkedInIcon: React.FC = () => <SocialIcon><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" /></SocialIcon>;

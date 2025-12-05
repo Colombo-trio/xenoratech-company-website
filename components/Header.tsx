@@ -27,9 +27,18 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 dark:bg-slate-900/50 backdrop-blur-lg shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl font-bold gradient-text">
+        {/* <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl font-bold gradient-text">
           VOXICORE
+        </Link> */}
+
+        <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center">
+          {theme === "dark" ? (
+            <img src="/logo-dark.png" alt="Voxicore Logo" className="h-6 w-auto" />
+          ) : (
+            <img src="/logo-light.png" alt="Voxicore Logo" className="h-6 w-auto" />
+          )}
         </Link>
+
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
@@ -83,11 +92,10 @@ const Header = () => {
               key={link.name}
               href={link.path}
               onClick={() => setIsOpen(false)}
-              className={`block w-full text-left px-6 py-2 ${
-                pathname === link.path
-                  ? "text-cyan-600 dark:text-cyan-400 bg-cyan-500/10"
-                  : "text-gray-700 dark:text-gray-300 hover:bg-cyan-500/10 dark:hover:bg-cyan-500/20"
-              }`}
+              className={`block w-full text-left px-6 py-2 ${pathname === link.path
+                ? "text-cyan-600 dark:text-cyan-400 bg-cyan-500/10"
+                : "text-gray-700 dark:text-gray-300 hover:bg-cyan-500/10 dark:hover:bg-cyan-500/20"
+                }`}
             >
               {link.name}
             </Link>

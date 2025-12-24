@@ -26,8 +26,8 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Facebook, href: "https://web.facebook.com/voxicore.digital", label: "Facebook", hoverColor: "#1877F2" },
+    { icon: Instagram, href: "https://www.instagram.com/voxicore.digital/", label: "Instagram", hoverColor: "#E1306C" },
   ];
 
   const footerLinks = {
@@ -74,9 +74,11 @@ const Footer = () => {
                 <motion.a
                   key={index}
                   href={social.href}
-                  whileHover={{ scale: 1.1, color: "#60A5FA" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, color: social.hoverColor, borderColor: social.hoverColor }}
                   whileTap={{ scale: 0.95 }}
-                  className="p-3 rounded-full bg-slate-200 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:bg-slate-300 dark:hover:bg-white/10 hover:border-blue-500/50 transition-colors text-slate-600 dark:text-slate-300"
+                  className="p-3 rounded-full bg-slate-200 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:bg-slate-300 dark:hover:bg-white/10 transition-colors text-slate-600 dark:text-slate-300"
                   aria-label={social.label}
                 >
                   <social.icon size={20} />

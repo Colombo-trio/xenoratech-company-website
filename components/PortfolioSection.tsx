@@ -16,7 +16,7 @@ const portfolioItems: PortfolioItem[] = [
     ],
     description: "VibeWear is an E-commerce website. Customers can buy clothes",
     technologies: ["React", "NodeJs", "ExpressJs", "MongoDb", "AWS"],
-    previewLink: "https://threadloom-wfyw.vercel.app/",
+    previewLink: "https://vibewear.lk/",
   },
   {
     id: 2,

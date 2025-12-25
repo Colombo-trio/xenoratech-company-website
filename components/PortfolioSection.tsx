@@ -5,7 +5,7 @@ import PortfolioModal from "./PortfolioModal";
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'VibeWear "E-Commerce',
+    title: "VibeWear E-Commerce Website",
     category: "Web App",
     imageUrl: "/images/portfolio/vibewear/Main.png",
     images: [
@@ -16,7 +16,7 @@ const portfolioItems: PortfolioItem[] = [
     ],
     description: "VibeWear is an E-commerce website. Customers can buy clothes",
     technologies: ["React", "NodeJs", "ExpressJs", "MongoDb", "AWS"],
-    previewLink: "https://threadloom-wfyw.vercel.app/",
+    previewLink: "https://vibewear.lk/",
     imageUrlLight: "/images/portfolio/vibewear/MainLight.png",
     imagesLight: [
       "/images/portfolio/vibewear/1.png",
@@ -24,7 +24,6 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/vibewear/3Light.png",
       "/images/portfolio/vibewear/4Light.png",
     ],
-    previewLink: "https://vibewear.lk/",
   },
   {
     id: 2,
@@ -62,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 5,
     title: "Chat with Funds",
-    category: "Website",
+    category: "WebApp",
     imageUrl: "/images/portfolio/chatwithfunds/Main.png",
     images: [
       "/images/portfolio/chatwithfunds/1.png",
@@ -132,7 +131,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 10,
     title: "LuxStay Luxury Hotel",
-    category: "Landing Page",
+    category: "Landing Website",
     imageUrl: "/images/portfolio/luxstayluxuryhotel/Main.png",
     images: [
       "/images/portfolio/luxstayluxuryhotel/1.png",
@@ -140,7 +139,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/luxstayluxuryhotel/3.png",
       "/images/portfolio/luxstayluxuryhotel/4.png",
     ],
-    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    description: "LuxStay Luxury Hotel is a landing page for a luxury hotel.",
     technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
     previewLink: "https://luxstayluxuryhotel.netlify.app/",
     imageUrlLight: "/images/portfolio/luxstayluxuryhotel/MainLight.png",
@@ -154,7 +153,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 11,
     title: "Lumina Luxe",
-    category: "Landing Page",
+    category: "Portfolio Website",
     imageUrl: "/images/portfolio/luminaluxe/Main.png",
     images: [
       "/images/portfolio/luminaluxe/1.png",
@@ -162,7 +161,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/luminaluxe/3.png",
       "/images/portfolio/luminaluxe/4.png",
     ],
-    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    description: "Lumina Luxe is a portfolio page for a photograper.",
     technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
     previewLink: "https://lumina-luxe.netlify.app/",
     imageUrlLight: "/images/portfolio/luminaluxe/MainLight.png",
@@ -176,7 +175,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 12,
     title: "Aura Brew",
-    category: "Landing Page",
+    category: "Landing Website",
     imageUrl: "/images/portfolio/aurabrew/Main.png",
     images: [
       "/images/portfolio/aurabrew/1.png",
@@ -184,7 +183,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/aurabrew/3.png",
       "/images/portfolio/aurabrew/4.png",
     ],
-    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    description: "Aura Brew is a landing page for a coffee shop.",
     technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
     previewLink: "https://aura-brew.netlify.app/",
     imageUrlLight: "/images/portfolio/aurabrew/MainLight.png",

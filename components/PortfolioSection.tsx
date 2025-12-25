@@ -17,6 +17,13 @@ const portfolioItems: PortfolioItem[] = [
     description: "VibeWear is an E-commerce website. Customers can buy clothes",
     technologies: ["React", "NodeJs", "ExpressJs", "MongoDb", "AWS"],
     previewLink: "https://threadloom-wfyw.vercel.app/",
+    imageUrlLight: "/images/portfolio/vibewear/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/vibewear/1.png",
+      "/images/portfolio/vibewear/2.png",
+      "/images/portfolio/vibewear/3Light.png",
+      "/images/portfolio/vibewear/4Light.png",
+    ],
   },
   {
     id: 2,
@@ -32,6 +39,13 @@ const portfolioItems: PortfolioItem[] = [
     description: "Visit Sri Lanka is a static blog site",
     technologies: ["React", "Vercel"],
     previewLink: "https://visit-srilanka-eight.vercel.app/",
+    imageUrlLight: "/images/portfolio/visitsl/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/visitsl/1.png",
+      "/images/portfolio/visitsl/2.png",
+      "/images/portfolio/visitsl/3Light.png",
+      "/images/portfolio/visitsl/4Light.png",
+    ],
   },
   {
     id: 4,
@@ -59,6 +73,13 @@ const portfolioItems: PortfolioItem[] = [
       "Explore a wide range of verified funding options available for nonprofits, small businesses, startups, and individuals - all from reliable foundations and government programs.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
     previewLink: "https://chatwithfunds.com",
+    imageUrlLight: "/images/portfolio/chatwithfunds/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/chatwithfunds/1.png",
+      "/images/portfolio/chatwithfunds/2.png",
+      "/images/portfolio/chatwithfunds/3Light.png",
+      "/images/portfolio/chatwithfunds/4Light.png",
+    ],
   },
   {
     id: 6,
@@ -81,6 +102,13 @@ const portfolioItems: PortfolioItem[] = [
       "Node.js",
     ],
     previewLink: "https://tnaturalistsl.netlify.app/",
+    imageUrlLight: "/images/portfolio/tnsl/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/tnsl/1.png",
+      "/images/portfolio/tnsl/2.png",
+      "/images/portfolio/tnsl/3Light.png",
+      "/images/portfolio/tnsl/4Light.png",
+    ],
   },
   {
     id: 9,
@@ -100,6 +128,72 @@ const portfolioItems: PortfolioItem[] = [
     ],
     previewLink: "https://huggingface.co/spaces/HHaaraa/echosense",
   },
+  {
+    id: 10,
+    title: "LuxStay Luxury Hotel",
+    category: "Landing Page",
+    imageUrl: "/images/portfolio/luxstayluxuryhotel/Main.png",
+    images: [
+      "/images/portfolio/luxstayluxuryhotel/1.png",
+      "/images/portfolio/luxstayluxuryhotel/2.png",
+      "/images/portfolio/luxstayluxuryhotel/3.png",
+      "/images/portfolio/luxstayluxuryhotel/4.png",
+    ],
+    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
+    previewLink: "https://luxstayluxuryhotel.netlify.app/",
+    imageUrlLight: "/images/portfolio/luxstayluxuryhotel/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/luxstayluxuryhotel/1.png",
+      "/images/portfolio/luxstayluxuryhotel/2.png",
+      "/images/portfolio/luxstayluxuryhotel/3Light.png",
+      "/images/portfolio/luxstayluxuryhotel/4Light.png",
+    ],
+  },
+  {
+    id: 11,
+    title: "Lumina Luxe",
+    category: "Landing Page",
+    imageUrl: "/images/portfolio/luminaluxe/Main.png",
+    images: [
+      "/images/portfolio/luminaluxe/1.png",
+      "/images/portfolio/luminaluxe/2.png",
+      "/images/portfolio/luminaluxe/3.png",
+      "/images/portfolio/luminaluxe/4.png",
+    ],
+    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
+    previewLink: "https://lumina-luxe.netlify.app/",
+    imageUrlLight: "/images/portfolio/luminaluxe/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/luminaluxe/1.png",
+      "/images/portfolio/luminaluxe/2.png",
+      "/images/portfolio/luminaluxe/3Light.png",
+      "/images/portfolio/luminaluxe/4Light.png",
+    ],
+  },
+  {
+    id: 12,
+    title: "Aura Brew",
+    category: "Landing Page",
+    imageUrl: "/images/portfolio/aurabrew/Main.png",
+    images: [
+      "/images/portfolio/aurabrew/1.png",
+      "/images/portfolio/aurabrew/2.png",
+      "/images/portfolio/aurabrew/3.png",
+      "/images/portfolio/aurabrew/4.png",
+    ],
+    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
+    previewLink: "https://aura-brew.netlify.app/",
+    imageUrlLight: "/images/portfolio/aurabrew/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/aurabrew/1.png",
+      "/images/portfolio/aurabrew/2.png",
+      "/images/portfolio/aurabrew/3Light.png",
+      "/images/portfolio/aurabrew/4Light.png",
+    ],
+  },
 ];
 
 const PortfolioCard: React.FC<{
@@ -113,8 +207,17 @@ const PortfolioCard: React.FC<{
     <img
       src={item.imageUrl}
       alt={item.title}
-      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+        item.imageUrlLight ? "hidden dark:block" : ""
+      }`}
     />
+    {item.imageUrlLight && (
+      <img
+        src={item.imageUrlLight}
+        alt={item.title}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 block dark:hidden"
+      />
+    )}
     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
       <p className="text-sm font-semibold text-cyan-400">{item.category}</p>

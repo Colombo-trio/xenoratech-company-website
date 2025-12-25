@@ -15,4 +15,6 @@ export interface PortfolioItem {
   previewLink?: string;
   technologies?: string[];
   description?: string;
+  imageUrlLight?: string;
+  imagesLight?: string[];
 }

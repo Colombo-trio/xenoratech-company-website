@@ -24,6 +24,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/vibewear/3Light.png",
       "/images/portfolio/vibewear/4Light.png",
     ],
+    previewLink: "https://vibewear.lk/",
   },
   {
     id: 2,

@@ -1,43 +1,28 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
-
-interface ThemeContextType {
-  theme: "light" | "dark";
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+import { ThemeProvider as NextThemesProvider, useTheme as useNextTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
-
-  useEffect(() => {
-    const stored = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (stored) {
-      setTheme(stored);
-    } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(prefersDark ? "dark" : "light");
-    }
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
-
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <NextThemesProvider
+      attribute="class"
+      defaultTheme="dark"
+      enableSystem={false}
+      disableTransitionOnChange
+    >
       {children}
-    </ThemeContext.Provider>
+    </NextThemesProvider>
   );
 }
 
 export function useTheme() {
-  const ctx = useContext(ThemeContext);
-  if (!ctx) throw new Error("useTheme must be used inside ThemeProvider");
-  return ctx;
+  const { theme, setTheme, resolvedTheme } = useNextTheme();
+
+  // Custom toggle function to match previous interface
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+  };
+
+  return { theme: resolvedTheme || "dark", toggleTheme, setTheme };
 }

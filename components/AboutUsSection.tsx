@@ -46,7 +46,7 @@ const AboutUsSection: React.FC = () => {
           <div className="relative">
             <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 to-cyan-500 rounded-lg blur-xl opacity-20"></div>
             <img
-              src="https://picsum.photos/seed/xenoratechteam/800/600"
+              src="/images/about/about.png"
               alt="Voxicore Team"
               className="relative rounded-lg shadow-2xl w-full h-auto"
             />

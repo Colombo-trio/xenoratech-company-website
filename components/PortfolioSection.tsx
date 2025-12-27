@@ -194,6 +194,75 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/aurabrew/4Light.png",
     ],
   },
+  {
+    id: 13,
+    title: "Eni Creations",
+    category: "Website",
+    imageUrl: "/images/portfolio/enicreations/Main.png",
+    images: [
+      "/images/portfolio/enicreations/1.png",
+      "/images/portfolio/enicreations/2.png",
+      "/images/portfolio/enicreations/3.png",
+      "/images/portfolio/enicreations/4.png",
+    ],
+    description:
+      "A responsive landing page and portfolio website created for a creative design brand. The site highlights services, featured work, and brand aesthetics using a clean and minimal layout.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    previewLink: "https://enicreations.netlify.app",
+    imageUrlLight: "/images/portfolio/enicreations/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/enicreations/1.png",
+      "/images/portfolio/enicreations/2.png",
+      "/images/portfolio/enicreations/3Light.png",
+      "/images/portfolio/enicreations/4Light.png",
+    ],
+  },
+  {
+    id: 14,
+    title: "Sandu Graphics",
+    category: "Website",
+    imageUrl: "/images/portfolio/sandugraphics/Main.png",
+    images: [
+      "/images/portfolio/sandugraphics/1.png",
+      "/images/portfolio/sandugraphics/2.png",
+      "/images/portfolio/sandugraphics/3.png",
+      "/images/portfolio/sandugraphics/4.png",
+    ],
+    description:
+      "A portfolio and landing website for Sandu Graphics and SG Media Lab to showcase branding, design, and digital media services. The platform focuses on visual storytelling, performance, and client credibility.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    previewLink: "https://sandugraphics.netlify.app",
+    imageUrlLight: "/images/portfolio/sandugraphics/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/sandugraphics/1.png",
+      "/images/portfolio/sandugraphics/2.png",
+      "/images/portfolio/sandugraphics/3Light.png",
+      "/images/portfolio/sandugraphics/4Light.png",
+    ],
+  },
+  {
+    id: 15,
+    title: "EventZ by Roma and Nick",
+    category: "Website",
+    imageUrl: "/images/portfolio/eventzbyrn/Main.png",
+    images: [
+      "/images/portfolio/eventzbyrn/1.png",
+      "/images/portfolio/eventzbyrn/2.png",
+      "/images/portfolio/eventzbyrn/3.png",
+      "/images/portfolio/eventzbyrn/4.png",
+    ],
+    description:
+      "A modern landing page and portfolio website built for an event planning and management brand. The site showcases services, past events, and brand identity with a clean and responsive UI.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    previewLink: "https://eventzbyrn.netlify.app",
+    imageUrlLight: "/images/portfolio/eventzbyrn/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/eventzbyrn/1.png",
+      "/images/portfolio/eventzbyrn/2.png",
+      "/images/portfolio/eventzbyrn/3Light.png",
+      "/images/portfolio/eventzbyrn/4Light.png",
+    ],
+  },
 ];
 
 const PortfolioCard: React.FC<{

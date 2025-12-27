@@ -5,9 +5,9 @@ import type { Testimonial } from "@/types";
 
 const testimonials: Testimonial[] = [
   {
-    quote: "Colombo Trio Digital transformed our vision into a stunning reality. Their team's expertise and dedication are unparalleled.",
-    name: 'Anya Perera',
-    title: 'CEO, Innovate Lanka',
+    quote: "Voxicore transformed our business with a stunning e-commerce platform. Their attention to detail and understanding of our brand 'VibeWear' was exceptional. Highly recommended for anyone looking to take their business online.",
+    name: 'Nishantha Pushpakumara',
+    title: 'Owner, Eagle Fashion (vibewear.lk)',
     rating: 5,
   },
   {
@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => (
   <div className="flex text-yellow-400">
     {[...Array(5)].map((_, i) => (
-      <svg key={i} className={`w-5 h-5 ${i < rating ? 'fill-current' : 'text-gray-400 dark:text-gray-600'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+      <svg key={i} className={`w-5 h-5 ${i < rating ? 'fill-current' : 'text-gray-400 dark:text-gray-600'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" /></svg>
     ))}
   </div>
 );
@@ -42,7 +42,7 @@ const TestimonialsSection: React.FC = () => {
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
-  
+
   useEffect(() => {
     const timer = setInterval(nextTestimonial, 5000);
     return () => clearInterval(timer);

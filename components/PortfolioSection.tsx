@@ -5,7 +5,7 @@ import PortfolioModal from "./PortfolioModal";
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'VibeWear "E-Commerce',
+    title: "VibeWear E-Commerce Website",
     category: "Web App",
     imageUrl: "/images/portfolio/vibewear/Main.png",
     images: [
@@ -16,6 +16,7 @@ const portfolioItems: PortfolioItem[] = [
     ],
     description: "VibeWear is an E-commerce website. Customers can buy clothes",
     technologies: ["React", "NodeJs", "ExpressJs", "MongoDb", "AWS"],
+    previewLink: "https://vibewear.lk/",
     imageUrlLight: "/images/portfolio/vibewear/MainLight.png",
     imagesLight: [
       "/images/portfolio/vibewear/1.png",
@@ -23,7 +24,6 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/vibewear/3Light.png",
       "/images/portfolio/vibewear/4Light.png",
     ],
-    previewLink: "https://vibewear.lk/",
   },
   {
     id: 2,
@@ -61,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 5,
     title: "Chat with Funds",
-    category: "Website",
+    category: "WebApp",
     imageUrl: "/images/portfolio/chatwithfunds/Main.png",
     images: [
       "/images/portfolio/chatwithfunds/1.png",
@@ -131,7 +131,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 10,
     title: "LuxStay Luxury Hotel",
-    category: "Landing Page",
+    category: "Landing Website",
     imageUrl: "/images/portfolio/luxstayluxuryhotel/Main.png",
     images: [
       "/images/portfolio/luxstayluxuryhotel/1.png",
@@ -139,7 +139,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/luxstayluxuryhotel/3.png",
       "/images/portfolio/luxstayluxuryhotel/4.png",
     ],
-    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    description: "LuxStay Luxury Hotel is a landing page for a luxury hotel.",
     technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
     previewLink: "https://luxstayluxuryhotel.netlify.app/",
     imageUrlLight: "/images/portfolio/luxstayluxuryhotel/MainLight.png",
@@ -153,7 +153,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 11,
     title: "Lumina Luxe",
-    category: "Landing Page",
+    category: "Portfolio Website",
     imageUrl: "/images/portfolio/luminaluxe/Main.png",
     images: [
       "/images/portfolio/luminaluxe/1.png",
@@ -161,7 +161,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/luminaluxe/3.png",
       "/images/portfolio/luminaluxe/4.png",
     ],
-    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    description: "Lumina Luxe is a portfolio page for a photograper.",
     technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
     previewLink: "https://lumina-luxe.netlify.app/",
     imageUrlLight: "/images/portfolio/luminaluxe/MainLight.png",
@@ -175,7 +175,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 12,
     title: "Aura Brew",
-    category: "Landing Page",
+    category: "Landing Website",
     imageUrl: "/images/portfolio/aurabrew/Main.png",
     images: [
       "/images/portfolio/aurabrew/1.png",
@@ -183,7 +183,7 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/aurabrew/3.png",
       "/images/portfolio/aurabrew/4.png",
     ],
-    description: "VibeWear is an E-commerce website. Customers can buy clothes",
+    description: "Aura Brew is a landing page for a coffee shop.",
     technologies: ["React", "NodeJs", "Tailwind CSS", "Netlify"],
     previewLink: "https://aura-brew.netlify.app/",
     imageUrlLight: "/images/portfolio/aurabrew/MainLight.png",
@@ -192,6 +192,75 @@ const portfolioItems: PortfolioItem[] = [
       "/images/portfolio/aurabrew/2.png",
       "/images/portfolio/aurabrew/3Light.png",
       "/images/portfolio/aurabrew/4Light.png",
+    ],
+  },
+  {
+    id: 13,
+    title: "Eni Creations",
+    category: "Website",
+    imageUrl: "/images/portfolio/enicreations/Main.png",
+    images: [
+      "/images/portfolio/enicreations/1.png",
+      "/images/portfolio/enicreations/2.png",
+      "/images/portfolio/enicreations/3.png",
+      "/images/portfolio/enicreations/4.png",
+    ],
+    description:
+      "A responsive landing page and portfolio website created for a creative design brand. The site highlights services, featured work, and brand aesthetics using a clean and minimal layout.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    previewLink: "https://enicreations.netlify.app",
+    imageUrlLight: "/images/portfolio/enicreations/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/enicreations/1.png",
+      "/images/portfolio/enicreations/2.png",
+      "/images/portfolio/enicreations/3Light.png",
+      "/images/portfolio/enicreations/4Light.png",
+    ],
+  },
+  {
+    id: 14,
+    title: "Sandu Graphics",
+    category: "Website",
+    imageUrl: "/images/portfolio/sandugraphics/Main.png",
+    images: [
+      "/images/portfolio/sandugraphics/1.png",
+      "/images/portfolio/sandugraphics/2.png",
+      "/images/portfolio/sandugraphics/3.png",
+      "/images/portfolio/sandugraphics/4.png",
+    ],
+    description:
+      "A portfolio and landing website for Sandu Graphics and SG Media Lab to showcase branding, design, and digital media services. The platform focuses on visual storytelling, performance, and client credibility.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    previewLink: "https://sandugraphics.netlify.app",
+    imageUrlLight: "/images/portfolio/sandugraphics/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/sandugraphics/1.png",
+      "/images/portfolio/sandugraphics/2.png",
+      "/images/portfolio/sandugraphics/3Light.png",
+      "/images/portfolio/sandugraphics/4Light.png",
+    ],
+  },
+  {
+    id: 15,
+    title: "EventZ by Roma and Nick",
+    category: "Website",
+    imageUrl: "/images/portfolio/eventzbyrn/Main.png",
+    images: [
+      "/images/portfolio/eventzbyrn/1.png",
+      "/images/portfolio/eventzbyrn/2.png",
+      "/images/portfolio/eventzbyrn/3.png",
+      "/images/portfolio/eventzbyrn/4.png",
+    ],
+    description:
+      "A modern landing page and portfolio website built for an event planning and management brand. The site showcases services, past events, and brand identity with a clean and responsive UI.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    previewLink: "https://eventzbyrn.netlify.app",
+    imageUrlLight: "/images/portfolio/eventzbyrn/MainLight.png",
+    imagesLight: [
+      "/images/portfolio/eventzbyrn/1.png",
+      "/images/portfolio/eventzbyrn/2.png",
+      "/images/portfolio/eventzbyrn/3Light.png",
+      "/images/portfolio/eventzbyrn/4Light.png",
     ],
   },
 ];

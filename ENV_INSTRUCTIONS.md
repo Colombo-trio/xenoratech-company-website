@@ -1,6 +1,6 @@
 # Environment Variables Setup
 
-To make the Contact Form work, you need to create a `.env.local` file in the root of your project (`d:\Freelance\Company website\xenoratech\.env.local`) and add the following keys:
+To make the Contact Form work, you need to create a `.env.local` file in the root of your project (`d:\Freelance\Company website\voxicore\.env.local`) and add the following keys:
 
 ```env
 # SMTP Configuration (for Nodemailer)
@@ -20,7 +20,7 @@ RECAPTCHA_SECRET_KEY=your_secret_key
 
 ## How to get ReCAPTCHA Keys:
 1. Go to [Google ReCAPTCHA Admin](https://www.google.com/recaptcha/admin/create).
-2. Label: `Xenoratech Contact Form`.
+2. Label: `Voxicore Contact Form`.
 3. ReCAPTCHA type: **Score based (v3)**.
 4. Domains: Add `localhost` (for dev) and your production domain.
 5. Copy the **Site Key** to `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`.

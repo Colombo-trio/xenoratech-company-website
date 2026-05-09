@@ -31,7 +31,7 @@ export default function StatsSection() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="text-center p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+                            className="text-center p-6 glass-card rounded-2xl shadow-sm hover:shadow-md transition-shadow"
                         >
                             <motion.div
                                 initial={{ scale: 0.5, opacity: 0 }}

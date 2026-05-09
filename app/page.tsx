@@ -1,5 +1,4 @@
-"use client";
-
+import { Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
 import ServicesPreview from "@/components/ServicesPreview";
 import PortfolioPreview from "@/components/PortfolioPreview";
@@ -10,20 +9,21 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import ScrollToTop from "@/components/ScrollToTop";
+import { ServicesSkeleton, PortfolioSkeleton } from "@/components/skeletons/HomeSkeletons";
 
 export default function Home() {
-  // Function to scroll to contact section
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
     <>
-      <HeroSection scrollToContact={scrollToContact} />
-      <ServicesPreview />
-      <PortfolioPreview />
+      <HeroSection />
+      
+      <Suspense fallback={<ServicesSkeleton />}>
+        <ServicesPreview />
+      </Suspense>
+
+      <Suspense fallback={<PortfolioSkeleton />}>
+        <PortfolioPreview />
+      </Suspense>
+
       <WhyChooseUs />
       <TechnologiesSection />
       <StatsSection />

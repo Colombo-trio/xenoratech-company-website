@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
@@ -14,12 +16,13 @@ const TechIcon: React.FC<{ icon: React.ReactNode; name: string }> = ({ icon, nam
       hidden: { opacity: 0, y: 20 },
       visible: { opacity: 1, y: 0 }
     }}
-    className="group flex flex-col items-center justify-center gap-2 p-4 bg-slate-200 dark:bg-slate-800/50 rounded-lg transition-transform duration-300 hover:-translate-y-2"
+    whileHover={{ y: -5, scale: 1.05 }}
+    className="group flex flex-col items-center justify-center gap-2 p-4 glass rounded-xl transition-all duration-300 shadow-sm hover:shadow-md"
   >
-    <div className="h-12 w-12 text-gray-600 dark:text-gray-400 group-hover:text-cyan-600 dark:group-hover:text-white transition-colors duration-300 flex items-center justify-center">
+    <div className="h-12 w-12 text-gray-600 dark:text-gray-400 group-hover:text-blue-500 dark:group-hover:text-cyan-400 transition-colors duration-300 flex items-center justify-center">
       {icon}
     </div>
-    <span className="text-sm text-gray-700 dark:text-gray-300">{name}</span>
+    <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">{name}</span>
   </motion.div>
 );
 

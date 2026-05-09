@@ -17,7 +17,7 @@ const ContactSection: React.FC = () => {
               </h2>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
                 Have a project in mind or want to explore possibilities? We're ready to talk.
-                Get in touch with XenoraTech anytime.
+                Get in touch with Voxicore anytime.
               </p>
             </div>
 

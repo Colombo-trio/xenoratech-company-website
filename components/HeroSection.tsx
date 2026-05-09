@@ -3,10 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-interface HeroSectionProps {
-  scrollToContact: () => void;
-}
-
 const AnimatedBackground: React.FC = () => {
   const [particles, setParticles] = useState<React.CSSProperties[]>([]);
 
@@ -53,7 +49,14 @@ const AnimatedBackground: React.FC = () => {
   );
 };
 
-const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
+const HeroSection: React.FC = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
       <AnimatedBackground />
@@ -64,7 +67,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
           style={{ animationDelay: "0.2s" }}
         >
           Innovate. Build. Scale with <br />
-          <span className="gradient-text">VOXICORE Digital.</span>
+          <span className="gradient-text">Voxicore.</span>
         </h1>
 
         <p
@@ -87,7 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
 
           <Link
             href="/portfolio"
-            className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 text-gray-800 dark:text-white font-semibold px-8 py-3 rounded-full hover:bg-black/10 dark:hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm"
+            className="glass text-gray-800 dark:text-white font-semibold px-8 py-3 rounded-full hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300 backdrop-blur-md"
           >
             See Our Work
           </Link>

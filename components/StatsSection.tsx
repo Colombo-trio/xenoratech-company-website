@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const stats = [
     { label: "Completed Projects", value: "10+", suffix: "" },
-    { label: "Years of Experience", value: "5+", suffix: "" },
+    { label: "Years of Experience", value: "1+", suffix: "" },
     { label: "Client Satisfaction", value: "100", suffix: "%" },
-    { label: "Global Clients", value: "20+", suffix: "" },
+    { label: "Global Clients", value: "2+", suffix: "" },
 ];
 
 const Counter = ({ value, suffix }: { value: string, suffix: string }) => {

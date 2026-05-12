@@ -8,6 +8,9 @@ import MouseGlow from "@/components/MouseGlow";
 export const metadata: Metadata = {
   title: "VOXICORE - Innovative Tech Solutions",
   description: "Your website description",
+  icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

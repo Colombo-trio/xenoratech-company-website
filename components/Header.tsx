@@ -11,7 +11,7 @@ const Header = () => {
   const pathname = usePathname();
 
   // Theme from context instead of props
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   const navLinks = [
     { name: "About", path: "/about" },
@@ -32,11 +32,10 @@ const Header = () => {
         </Link> */}
 
         <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center">
-          {theme === "dark" ? (
-            <img src="/logo-dark.png" alt="Voxicore Logo" className="h-6 w-auto" />
-          ) : (
-            <img src="/logo-light.png" alt="Voxicore Logo" className="h-6 w-auto" />
-          )}
+          <div className="relative h-6 w-auto">
+            <img src="/logo-dark.png" alt="Voxicore Logo" className="h-6 w-auto hidden dark:block" />
+            <img src="/logo-light.png" alt="Voxicore Logo" className="h-6 w-auto block dark:hidden" />
+          </div>
         </Link>
 
 
@@ -58,7 +57,8 @@ const Header = () => {
             className="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-800 transition-colors"
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+            <div className="hidden dark:block"><SunIcon /></div>
+            <div className="block dark:hidden"><MoonIcon /></div>
           </button>
 
           {/* Contact Button */}
@@ -111,7 +111,8 @@ const Header = () => {
               className="p-2 rounded-full text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-slate-800"
               aria-label="Toggle theme"
             >
-              {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+              <div className="hidden dark:block"><SunIcon /></div>
+              <div className="block dark:hidden"><MoonIcon /></div>
             </button>
           </div>
 

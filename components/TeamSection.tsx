@@ -2,29 +2,24 @@ import React from 'react';
 
 const teamMembers = [
   {
-    name: "Alex Morgan",
-    role: "CEO & Founder",
-    image: "https://picsum.photos/seed/alexmorgan/400/400",
-    bio: "Visionary leader with a passion for innovation and digital transformation."
+    name: "Janaka Prasad",
+    role: "Co-founder",
+    image: "/images/about/Janaka.jpg",
+    bio: "Passionate about full-stack architectures and building scalable, high-performance web applications."
   },
   {
-    name: "Sarah Jenkins",
-    role: "CTO",
-    image: "https://picsum.photos/seed/sarahjenkins/400/400",
-    bio: "Tech enthusiast driving the engineering excellence behind our solutions."
+    name: "Nipun Lakshitha",
+    role: "Co-founder",
+    image: "/images/about/Nipun.jpeg",
+    bio: "Dedicated to crafting seamless user experiences and optimizing backend efficiency for robust solutions."
   },
   {
-    name: "David Chen",
-    role: "Head of Design",
-    image: "https://picsum.photos/seed/davidchen/400/400",
-    bio: "Creative mind crafting intuitive and beautiful user experiences."
+    name: "Hasitha Hirushan",
+    role: "Co-founder",
+    image: "/images/about/Hasitha.jpeg",
+    bio: "Innovative problem solver specializing in modern frontend technologies and interactive design systems."
   },
-  {
-    name: "Emily Rodriguez",
-    role: "Lead Developer",
-    image: "https://picsum.photos/seed/emilyrodriguez/400/400",
-    bio: "Full-stack wizard turning complex problems into elegant code."
-  }
+
 ];
 
 const TeamMemberCard: React.FC<{ member: typeof teamMembers[0] }> = ({ member }) => (
@@ -63,7 +58,7 @@ const TeamSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={index} member={member} />
           ))}
